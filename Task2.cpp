@@ -61,6 +61,12 @@ void createRuleTest()
 	const char* expected = "ZYXWVUTSRQPONMLKJIHGFEDCBA";
 
 	cout << "Test for creation rule " << (equals(actual, expected) ? "Passed." : "Failed.") << endl;
+	
+	actual = createRule(source, 5);
+
+	char* expected = "UTSRQPONMLKJIHGFEDCBAZYXWV";
+
+	cout << "Test for creation rule " << (equals(actual, expected) ? "Passed." : "Failed.") << endl;
 }
 
 void encodingTests()
