@@ -103,7 +103,7 @@ void decodingTests()
 
 	const char* rule = createRule(source);
 
-	char* decode = decoding(new int [10] {10, 17, 21, 4, 8, 32, 19, 43, 43, 33}, 10, rule);
+	char* decode = decoding(new int [10] {15, 22, 26, 9, 13, 32, 24, 43, 43, 33}, 10, rule);
 
 	cout << "Test for decoding " << (equals(decode, "LEARN C++!") ? "Passed." : "Failed.") << endl;
 
