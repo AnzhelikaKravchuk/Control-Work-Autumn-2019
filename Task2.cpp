@@ -99,11 +99,11 @@ void decodingTests()
 
 	char* decode = decoding(new int [10] {10, 17, 21, 4, 8, 32, 19, 43, 43, 33}, 10, rule);
 
-	cout << "Test for decoding " << (equals(decode, "Learn C++!") ? "Passed." : "Failed.") << endl;
+	cout << "Test for decoding " << (equals(decode, "LEARN C++!") ? "Passed." : "Failed.") << endl;
 
 	decode = decoding(new int [29] {24, 12, 20, 18, 7, 12, 44, 32, 22, 9, 20, 12, 32, 8, 6, 14, 33, 32, 40, 23, 22, 8, 24, 26, 9, 7, 22, 8, 41}, 29, rule);
 
-	cout << "Test for decoding " << (equals(decode, "Cogito, ergo sum! (Descartes)") ? "Passed." : "Failed.") << endl;
+	cout << "Test for decoding " << (equals(decode, "COGITO, ERGO SUM! (DESCARTES)") ? "Passed." : "Failed.") << endl;
 
 	// new shift rule
 	
@@ -111,11 +111,11 @@ void decodingTests()
 
 	decode = decoding(new int[10]{ 10, 17, 21, 4, 8, 32, 19, 43, 43, 33 }, 10, rule);
 
-	cout << "Test for decoding " << (equals(decode, "Learn C++!") ? "Passed." : "Failed.") << endl;
+	cout << "Test for decoding " << (equals(decode, "LEARN C++!") ? "Passed." : "Failed.") << endl;
 
 	decode = decoding(new int[29]{ 19, 7, 15, 13, 2, 7, 44, 32, 17, 4, 15, 7, 32, 3, 1, 9, 33, 32, 40, 18, 17, 3, 19, 21, 4, 2, 17, 3, 41 }, 29, rule);
 
-	cout << "Test for decoding " << (equals(decode, "Cogito, ergo sum! (Descartes)") ? "Passed." : "Failed.") << endl;
+	cout << "Test for decoding " << (equals(decode, "COGITO, ERGO SUM! (DESCARTES)") ? "Passed." : "Failed.") << endl;
 }
 
 char* createRule(const char* source, int shift)
