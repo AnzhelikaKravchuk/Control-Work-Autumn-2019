@@ -53,15 +53,15 @@ bool equals(const int* lhs, const int* rhs)
 
 void createRuleTest()
 {
-	const char* source = "abcdefghijklmnopqrstuvwxyz";
+	const char* source = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	const char* actual = createRule(source);
-	const char* expected = "zyxwvutsrqponmlkjihgfedcba";
+	const char* expected = "ZYXWVUTSRQPONMLKJIHGFEDCBA";
 	cout << "Test for creation rule " << ( equals(actual, expected) ? "Passed." : "Failed." ) << endl;
 }
 
 void encodingTests()
 {
-	const char* source = "abcdefghijklmnopqrstuvwxyz";
+	const char* source = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 	const char* rule = createRule(source);
 
@@ -77,7 +77,7 @@ void encodingTests()
 
 void decodingTests()
 {
-	const char* source = "abcdefghijklmnopqrstuvwxyz";
+	const char* source = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 	const char* rule = createRule(source);
 
